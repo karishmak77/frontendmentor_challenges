@@ -21,6 +21,8 @@ main {
   border-radius: 2rem;
   border: 2px solid black;
   box-shadow: 7px 7px 1px black;
+  margin:2rem;
+  transform:scale(1.2);
 }
 .img {
   width: 100%;
@@ -39,6 +41,7 @@ main {
   font-weight: 600;
   font-size: 1.1rem;
   margin-bottom: 2rem;
+  
 }
 
 .box2 {
@@ -47,11 +50,13 @@ main {
 }
 .heading {
   font-size: 2.2rem;
+  font-weight: 800;
 }
 .information {
   font-size: 1.6rem;
   color: hsl(0, 0%, 50%);
   margin: 1.5rem 0rem;
+  line-height:2.5rem;
 }
 .profile-img {
   width: 3.5rem;
