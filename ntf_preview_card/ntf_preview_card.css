@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit";
+}
+html {
+  font-size: 62.5%;
+}
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(217, 54%, 11%);
+}
+.container {
+  width: 35rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: hsl(216, 50%, 16%);
+  box-shadow: 0 25px 0 19px rgba(0, 0, 0, 0.08),
+    0 22px 0 50px rgba(0, 0, 0, 0.05);
+  margin: 2rem;
+}
+.Equilibrium {
+  width: 100%;
+  border-radius: 1rem;
+}
+.heading {
+  margin: 1.5rem 0;
+  font-size: 2.5rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.information {
+  font-size: 1.8rem;
+  color: hsl(215, 51%, 70%);
+  margin-bottom: 2.5rem;
+}
+.info-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+.info-1,
+.info-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.eth {
+  font-size: 1.5rem;
+  color: hsl(178, 100%, 50%);
+  margin-left: 1rem;
+  font-weight: 700;
+}
+.time-left {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  font-weight: 600;
+  color: hsl(215, 51%, 70%);
+}
+hr {
+  border: 1px solid hsl(215, 32%, 27%);
+  margin: 2rem 0;
+}
+.user-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.avatar {
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 3.5rem;
+  margin-right: 1rem;
+}
+.name {
+  font-size: 1.8rem;
+  color: white;
+}
+span {
+  color: hsl(215, 51%, 70%);
+}
