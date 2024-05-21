@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "red hat display";
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(225, 100%, 94%) url(images/pattern-background-desktop.svg)
+    no-repeat top/contain;
+}
+
+.conatianer {
+  width: 34rem;
+  overflow: hidden;
+  border-radius: 2rem;
+  box-shadow: 0 22px 20px rgba(31, 47, 83, 0.1);
+  margin: 2rem;
+}
+.Order_summary_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 2rem;
+  text-align: center;
+}
+.heading {
+  font-size: 2rem;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+.card_box {
+  background-color: white;
+}
+.illustration {
+  width: 100%;
+}
+.summary {
+  font-size: 1.2rem;
+  color: hsl(224, 23%, 55%);
+  margin: 1rem 0;
+  font-weight: 700;
+  line-height: 1.7;
+}
+.summary_box {
+  padding: 0 2rem;
+  margin: 1rem 0;
+}
+.btn_payment {
+  background-color: hsl(245, 75%, 52%);
+  border: none;
+  color: white;
+  padding: 1rem 7.9rem;
+  font-size: 1.2rem;
+  border-radius: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  box-shadow: 0 15px 10px rgba(31, 47, 83, 0.15);
+  transition: all 1s;
+}
+.btn_payment:hover,
+.btn_payment:active {
+  cursor: pointer;
+  background-color: #7b68ee;
+}
+.plan_container {
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  padding: 2rem;
+  background-color: hsl(225, 100%, 98%);
+  margin-bottom: 2rem;
+}
+.music {
+  width: 3.5rem;
+}
+.plan {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-left: -6.5rem;
+}
+.annual_plan {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: hsl(223, 47%, 23%);
+}
+.price {
+  text-align: left;
+  font-size: 1.2rem;
+  color: hsl(224, 23%, 55%);
+  font-weight: 600;
+}
+.link {
+  font-weight: 700;
+  transition: all 0.6s;
+}
+.link:hover,
+.link:active {
+  text-decoration: none;
+  color: #7b68ee;
+}
+.cancle {
+  font-size: 1rem;
+  font-weight: 900;
+  color: hsl(224, 23%, 55%);
+  margin-bottom: 1.2rem;
+}
+.cancle:hover,
+.cancle:active {
+  cursor: pointer;
+  color: hsl(223, 47%, 23%);
+}
