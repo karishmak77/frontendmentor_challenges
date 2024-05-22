@@ -22,7 +22,7 @@ body {
   border-radius: 2rem;
   box-shadow: 0 22px 20px rgba(31, 47, 83, 0.1);
   margin: 2rem;
-  transform: scale(2);
+  transform: scale(1.2);
 }
 .Order_summary_container {
   display: flex;
