@@ -94,3 +94,15 @@ html {
   background-color: hsl(184, 100%, 22%);
   color: hsl(0, 0%, 95%);
 }
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  .cards {
+    flex-direction: column;
+    margin: 5rem 2rem;
+  }
+}
