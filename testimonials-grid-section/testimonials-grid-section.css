@@ -104,11 +104,18 @@ body {
   margin: 1.5rem 0;
 }
 @media (max-width: 670px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    min-height: 100vh;
+    width: auto;
+    background-color: hsl(210, 46%, 95%);
+  }
   .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin: 2rem;
   }
 }
