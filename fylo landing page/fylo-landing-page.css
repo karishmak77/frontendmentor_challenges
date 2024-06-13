@@ -16,7 +16,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 4rem;
+  padding: 7rem;
   align-items: center;
 }
 .nav-bar {
@@ -42,7 +42,7 @@ body {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   /* margin: 0 auto; */
-  padding: 0 7rem;
+  padding: 0 10rem;
   column-gap: 4rem;
 }
 /* .text {
