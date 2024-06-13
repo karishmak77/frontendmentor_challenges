@@ -249,6 +249,9 @@ input::placeholder {
     flex-direction: column-reverse;
     justify-content: center;
   }
+   .logo {
+    width: 8rem;
+  }
 
   .btn-box,
   .input-box {
