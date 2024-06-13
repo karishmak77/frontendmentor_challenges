@@ -16,7 +16,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 7rem;
+  padding: 3.5rem;
   align-items: center;
 }
 .nav-bar {
