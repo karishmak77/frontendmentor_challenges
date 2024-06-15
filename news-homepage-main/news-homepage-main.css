@@ -230,7 +230,8 @@ nav .items {
     min-height: 100vh;
   }
   .container {
-    width: 1024px;
+    width: 1200px;
+    margin-top:7rem;
   }
   .hero-section {
     width: 100%;
