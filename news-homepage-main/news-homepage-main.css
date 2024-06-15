@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "inter";
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  min-height: 100vh;
+}
+.container {
+  padding: 2rem;
+}
+.hero-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+  gap: 2.5rem;
+}
+.image {
+  width: 100%;
+  object-fit: cover;
+}
+.new-news {
+  background-color: hsl(240, 100%, 5%);
+}
+.news-box {
+  padding: 3rem;
+}
+.heading {
+  color: hsl(35, 77%, 62%);
+  font-size: 3rem;
+}
+.sub-heading {
+  color: hsl(36, 100%, 99%);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+.paragraph {
+  color: hsl(233, 8%, 79%);
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+.bright-future {
+  font-size: 5rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.information {
+  padding: 0 1rem;
+}
+.infos {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: hsl(236, 13%, 42%);
+}
+.btn {
+  padding: 1.5rem 3rem;
+  margin-top: 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  background-color: hsl(5, 85%, 63%);
+  border: none;
+  transition: all 0.3s;
+}
+.btn:hover,
+.btn:active {
+  background-color: hsl(240, 100%, 5%);
+  color: hsl(36, 100%, 99%);
+  cursor: pointer;
+}
+.article {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+.article {
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+
+  gap: 2rem;
+}
+.articles {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+.photos {
+  width: 100%;
+}
+.number {
+  font-size: 2.5rem;
+  color: hsl(5, 85%, 63%);
+}
+.thrid-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+.thrid-heading:hover,
+.thrid-heading:active {
+  cursor: pointer;
+  color: hsl(5, 85%, 63%);
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.Navigation-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+  position: relative;
+}
+nav {
+  display: flex;
+}
+.items {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.items-name a {
+  color: hsl(236, 13%, 42%);
+
+  text-decoration: none;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  transition: left 0.3s;
+}
+nav .items {
+  display: none;
+}
+
+.menu-icon {
+  display: block;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.side-bar {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  height: 100%;
+  width: 250px;
+  background-color: white;
+  color: black;
+  padding-top: 60px;
+  transition: left 3s;
+  z-index: 2;
+}
+.side-bar.show {
+  right: 0;
+}
+
+.side-bar .close-icon {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.side-items {
+  list-style-type: none;
+  padding: 0;
+}
+
+.side-items .items-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: hsl(236, 13%, 42%);
+  padding: 8px 16px;
+  text-align: left;
+}
+.items-name:hover,
+.items-name:active {
+  cursor: pointer;
+  color: hsl(5, 85%, 63%);
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 1;
+}
+.overlay.show {
+  display: block;
+}
+
+@media (width>1024px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    min-height: 100vh;
+  }
+  .container {
+    width: 1024px;
+  }
+  .hero-section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "a a b"
+      "c d b";
+    margin-bottom: 5rem;
+    /* gap: 2.5rem; */
+  }
+  .new-news {
+    grid-area: b;
+    background-color: hsl(240, 100%, 5%);
+  }
+
+  .articles {
+    display: flex;
+    gap: 2rem;
+  }
+  .article {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    gap: 2rem;
+  }
+  nav .items {
+    display: flex;
+    gap: 20px;
+  }
+  .menu-icon {
+    display: none;
+  }
+  .side-bar {
+    display: none;
+  }
+  .items-name {
+    margin: 0 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: hsl(236, 13%, 42%);
+  }
+  .web-image {
+    grid-area: a;
+  }
+  .font {
+    grid-area: c;
+  }
+  .information {
+    grid-area: d;
+  }
+}
