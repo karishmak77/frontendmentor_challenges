@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins";
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: hsl(0, 0%, 94%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.age-container {
+  width: 50rem;
+  padding: 3rem 2rem;
+  background-color: hsl(0, 0%, 100%);
+  margin: 2rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 8rem;
+}
+.input-date label {
+  display: block;
+  color: hsl(0, 1%, 44%);
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 2px;
+}
+input {
+  width: 7rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  font-family: inherit;
+  border: 1px solid hsl(0, 0%, 86%);
+  border-radius: 5px;
+}
+.age-date {
+  /* width: 100%; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+.show-result,
+.result {
+  font-size: 3.7rem;
+  font-style: oblique;
+  font-weight: 800;
+}
+.result {
+  align-self: center;
+  color: hsl(259, 100%, 65%);
+}
+.divider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 1rem;
+}
+.divider button {
+  border: none;
+  background-color: hsl(259, 100%, 65%);
+  z-index: 1;
+  padding: 1.5rem;
+  border-radius: 50%;
+  font-weight: bolder;
+}
+hr {
+  position: absolute;
+  border: 1.4px solid hsl(0, 0%, 94%);
+  width: 100%;
+}
+.btn {
+  height: 2rem;
+  width: 2rem;
+  background-color: hsl(259, 100%, 65%);
+}
+.result-box {
+  line-height: 1.2;
+}
+.result-box div {
+  display: flex;
+  align-items: center;
+}
+.error-msg {
+  font-size: 0.7rem;
+  font-style: italic;
+  text-transform: capitalize;
+  color: hsl(0, 100%, 67%);
+  display: none;
+  /* opacity: 0; */
+  transition: all 0.3s;
+}
+.error-msg-show {
+  color: hsl(0, 100%, 67%);
+}
+
+@media (width>425px) {
+  .age-date {
+    margin-right: 15rem;
+  }
+  .input-date input {
+    width: 100%;
+  }
+  .divider {
+    align-items: flex-end;
+  }
+  .show-result,
+  .result {
+    font-size: 6rem;
+  }
+}
