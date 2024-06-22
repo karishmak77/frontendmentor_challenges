@@ -17,7 +17,7 @@ body {
 }
 .age-container {
   width: 50rem;
-  padding: 3rem 2rem;
+  padding: 3rem 3rem;
   background-color: hsl(0, 0%, 100%);
   margin: 2rem;
   border-top-left-radius: 2rem;
@@ -105,6 +105,9 @@ hr {
 }
 
 @media (width>425px) {
+  .age-container {
+    transform: scale(1.2);
+  }
   .age-date {
     margin-right: 15rem;
   }
