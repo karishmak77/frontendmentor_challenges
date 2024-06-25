@@ -13,37 +13,36 @@ document.addEventListener("DOMContentLoaded", function () {
   form.addEventListener("submit", function (event) {
     event.preventDefault();
 
-    // Reset the required messages visibility
+    
     requiredMessages.forEach((msg) => (msg.style.display = "none"));
 
     let isValid = true;
 
-    // Validate first name
+   
     if (!firstNameInput.value.trim()) {
       firstNameInput.nextElementSibling.style.display = "block";
       isValid = false;
     }
 
-    // Validate last name
     if (!lastNameInput.value.trim()) {
       lastNameInput.nextElementSibling.style.display = "block";
       isValid = false;
     }
 
-    // Validate email
+   
     if (!validateEmail(emailInput.value.trim())) {
       emailInput.nextElementSibling.style.display = "block";
       isValid = false;
     }
 
-    // Validate query type
+    
     if (!generalEnquiryInput.checked && !supportEnquiryInput.checked) {
       generalEnquiryInput.parentElement.parentElement.nextElementSibling.style.display =
         "block";
       isValid = false;
     }
 
-    // Validate message
+    
     if (!messageInput.value.trim()) {
       messageInput.nextElementSibling.style.display = "block";
       isValid = false;
@@ -59,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
       successMessage.style.display = "block";
       form.reset();
 
-      // Hide success message after 3 seconds
+      
       setTimeout(() => {
         successMessage.style.display = "none";
       }, 3000);
