@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
       isValid = false;
     }
 
-    // Validate checkbox
+  
     if (!checkboxInput.checked) {
       checkboxInput.parentElement.nextElementSibling.style.display = "block";
       isValid = false;
