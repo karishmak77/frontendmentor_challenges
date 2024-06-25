@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="contact-us.css">
+    <script src="contact-us.js"></script>
+
+    <title>Frontend Mentor | Contact form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- ### Primary
+
+    - Green 200 (lighter): hsl(148, 38%, 91%)
+    - Green 600 (medium): hsl(169, 82%, 27%)
+    - Red: hsl(0, 66%, 54%)
+    
+    ### Neutral
+    
+    - White: hsl(0, 0%, 100%)
+    - Grey 500 (medium): hsl(186, 15%, 59%)
+    - Grey 900 (darker): hsl(187, 24%, 22%) -->
+  </head>
+  <body>
+    <section class="sucess">
+      <div>
+        <img src="assets/images/icon-success-check.svg" class="icon">
+        <p class="msg-sent">Message Sent!</p>
+      </div>
+      <p class="thanks">Thanks for completing the form. We'll be in touch soon!</p>
+    </section>
+    <section class="container">
+      <h1 class="heading">Contact Us</h1>
+      <form action="#" class="Contact-us">
+        <div class="name">
+          <div class="name-container">
+            <label for="first-name">First Name <span>*</span></label>
+            <input id="first-name" type="text" placeholder="" />
+            <p class="required">This field is required</p>
+          </div>
+
+          <div class="name-container">
+            <label for="last-name">Last Name <span>*</span></label>
+            <input id="last-name" type="text" placeholder="" />
+            <p class="required">This field is required</p>
+          </div>
+        </div>
+
+        <div class="email-container">
+          <label for="Email">Email Address <span>*</span></label>
+          <input type="text" id="Email" />
+          <p class="required">Please enter a valid email address</p>
+        </div>
+
+        <div class="qurey">
+          <label for="query-type">Query Type <span>*</span></label>
+          <div class="qurey-container">
+            <div class="general">
+              <input
+                type="radio"
+                id="genral-enquiry"
+                name="choice"
+                value="option-1"
+              />
+              <label for="genral-enquiry">General Enquiry</label>
+            </div>
+
+            <div class="support">
+              <input
+                type="radio"
+                id="support-enquiry"
+                name="choice"
+                value="option-2"
+              />
+              <label for="support-enquiry">Support Enquiry</label>
+            </div>
+          </div>
+          <p class="required">Please select a qurey type</p>
+        </div>
+
+        <div class="msg">
+          <label for="message">Message</label>
+          <input id="message" type="text" class="msg-box" />
+          <p class="required">This field is required</p>
+        </div>
+
+        <div>
+          <div class="check">
+            <input type="checkbox" name="" id="checkbox-x" />
+            <label for="checkbox-x class="msg-p">
+              I consent to being contacted by the team <span>*</span>
+            </label>
+          </div>
+          <p class="required">
+            To sumbmit this form,please consent to being contacted
+          </p>
+        </div>
+
+        <button class="btn">Submit</button>
+      </form>
+    </section>
+
+  </body>
+</html>

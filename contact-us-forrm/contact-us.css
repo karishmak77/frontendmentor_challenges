@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla";
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  min-height: 100vh;
+  background-color: hsl(148, 38%, 91%);
+}
+label {
+  font-size: 1.6rem;
+
+  color: hsl(187, 24%, 22%);
+}
+
+.container {
+  background-color: hsl(0, 0%, 100%);
+  padding: 4rem;
+  margin: 2rem;
+  border-radius: 1rem;
+}
+.heading {
+  color: hsl(187, 24%, 22%);
+  font-size: 3.2rem;
+  margin-bottom: 3rem;
+}
+.required {
+  display: none;
+  color: hsl(0, 66%, 54%);
+}
+
+.name-container,
+.email-container,
+.msg,
+.Contact-us,
+.name,
+.qurey,
+.qurey-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.Contact-us,
+.check {
+  gap: 7px;
+}
+
+.genenal,
+.support,
+.check {
+  display: flex;
+  align-items: center;
+}
+.name-container {
+  margin-bottom: 0.5rem;
+}
+.general,
+.support {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 2rem;
+  border: 1px solid hsl(169, 82%, 27%);
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+input {
+  height: 3.5rem;
+  border-radius: 5px;
+  border: 1px solid hsl(169, 82%, 27%);
+}
+input:hover,
+input:active {
+  cursor: pointer;
+  border-color: hsl(187, 24%, 22%);
+}
+.support input {
+  border: 1px black;
+}
+.msg input {
+  height: 20rem;
+}
+.msg-p {
+  font-size: 1.3rem;
+  margin-left: 1rem;
+}
+.btn {
+  font-weight: bold;
+  border: none;
+  color: white;
+  background-color: hsl(169, 82%, 27%);
+  padding: 1.5rem;
+  border-radius: 5px;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover,
+.btn:active {
+  background-color: hsl(187, 24%, 22%);
+}
+.sucess {
+  display: none;
+  background-color: hsl(187, 24%, 22%);
+  padding: 2rem;
+  margin-top: 2rem;
+  margin-bottom: -2rem;
+  border-radius: 1rem;
+}
+.sucess div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.icon {
+  width: 7%;
+}
+
+.msg-sent {
+  font-weight: 700;
+  color: white;
+  font-size: 1.2rem;
+}
+.thanks {
+  color: white;
+}
+@media (width>38em) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-width: 600px;
+  }
+  .name-container {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+  }
+  .qurey-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .general,
+  .support {
+    padding: 1rem;
+    display: flex;
+    width: 100%;
+  }
+  .general input {
+    width: 8%;
+    display: block;
+    margin-left: 1rem;
+  }
+  .support input {
+    width: 8%;
+    display: block;
+    margin-left: 1rem;
+  }
+  input {
+    width: 100%;
+  }
+
+  .name,
+  .qurey-container {
+    width: 100%;
+    flex-direction: row;
+  }
+  .check input {
+    width: 3%;
+  }
+}
